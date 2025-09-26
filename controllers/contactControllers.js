@@ -1,8 +1,8 @@
-const Contact = require('../models/Contact');
+const Contact = require('../modals/Contact');
 const nodemailer = require('nodemailer');
 
 // Configure nodemailer (optional - for sending email notifications)
-const transporter = nodemailer.createTransporter({
+const transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: process.env.EMAIL_USER,
